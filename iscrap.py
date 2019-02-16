@@ -13,5 +13,7 @@ def get_imgs(link):
 
         if l['src'][:4] == 'http':
             link_array.append(l['src'])
+        else:
+            link_array.append(link + l['src'])
 
     return link_array
